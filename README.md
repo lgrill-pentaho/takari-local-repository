@@ -16,15 +16,16 @@ The Takari concurrent local repository support, available from https://github.co
 
 Note that this extension is only concerned with the data integrity of the local repository at the artifact/metadata file level. It does not provide all-or-nothing installation of artifacts produced by a given build.
 
-Installation and Usage
+# Installation and Usage
 To use the Takari local repository access, you must install it in Maven’s lib/ext folder, by downloading the jar files from the Central Repository and moving them into place:
 
 Original:
 curl -O http://repo1.maven.org/maven2/io/takari/aether/takari-local-repository/0.10.4/takari-local-repository-0.10.4.jar
+
 Hitachi-Vantara (Pentaho):
 curl -O https://nexus.pentaho.org/repository/public-release/org/hitachi/aether/takari-local-repository/0.12.0/takari-local-repository-0.12.0.jar
 
-mv takari-local-repository-0.10.4.jar $M2_HOME/lib/ext
+mv takari-local-repository-<version>.jar $M2_HOME/lib/ext
  
 curl -O http://repo1.maven.org/maven2/io/takari/takari-filemanager/0.8.2/takari-filemanager-0.8.2.jar
 mv takari-filemanager-0.8.2.jar $M2_HOME/lib/ext
